@@ -1,0 +1,12 @@
+<%= render 'banner' %>
+
+<div class="article-title padded">
+  <h1><em><%= @article.title %></em> </h1>
+</div>
+<div class="article-content padded">
+  <p><%= @article.content %></p>
+</div>
+<div class="links"><%= link_to "Delete", article_path, method: :delete  %>
+  <%= link_to "Update", edit_article_path %></div>
+
+

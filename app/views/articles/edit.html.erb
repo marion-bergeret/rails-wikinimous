@@ -1,0 +1,12 @@
+<%= render 'banner' %>
+<h1 class="article-title padded">Edit <em><%= @article.title %></em></h1>
+
+<%= form_for(@article) do |f| %>
+  <%= f.label :title %>
+  <%= f.text_field :title %>
+
+  <%= f.label :content %>
+  <%= f.text_field :content %>
+
+  <%= f.submit %>
+<% end %>
